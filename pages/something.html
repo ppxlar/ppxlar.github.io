@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics Choice</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #222;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        #graphics-selection {
+            text-align: center;
+        }
+        button {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            display: none; /* Hide by default */
+        }
+    </style>
+</head>
+<body>
+    <!-- Container for graphics selection buttons -->
+    <div id="graphics-selection">
+        <h1>Select Graphics Settings</h1>
+        <button id="high-end">High-End Graphics</button>
+        <button id="potato">Potato Graphics</button>
+    </div>
+
+    <!-- Container for Particle.js -->
+    <div id="particles-js"></div>
+
+    <!-- Include the JavaScript file -->
+    <script src="device-check.js"></script>
+</body>
+</html>
